@@ -12,11 +12,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddReminderComponent } from './components/add-reminder/add-reminder.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const myRoutes: Routes = [
   { path: '', component: RemindersComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'create', component: AddReminderComponent },
 ];
 
 @NgModule({
@@ -35,6 +38,8 @@ const myRoutes: Routes = [
     AppRoutingModule,
     FontAwesomeModule,
     RouterModule.forRoot(myRoutes, { enableTracing: true }),
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

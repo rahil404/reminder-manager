@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Reminder } from '../../Reminder';
-import { REMINDERS } from '../../default-reminders';
 import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 import { ReminderService } from '../../services/reminder.service';
 import { Subscription } from 'rxjs';
