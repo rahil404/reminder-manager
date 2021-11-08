@@ -1,0 +1,9 @@
+hr {
+  margin-top: 20px;
+}
+
+.footer > a {
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+}

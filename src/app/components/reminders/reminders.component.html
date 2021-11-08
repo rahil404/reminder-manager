@@ -1,0 +1,9 @@
+<h2>
+  Reminders
+  <fa-icon
+    [icon]="faPlusSquare"
+  ></fa-icon>
+</h2>
+<!-- <app-reminder-item *ngFor="let reminder of reminders" [reminder]="reminder">{{reminder.title}}</app-reminder-item> -->
+
+<app-reminder-item *ngFor="let reminder of reminders" [reminder]="reminder" (onToggleCompleted)="toggleCompleted(reminder)" (onDeleteReminder)="deleteReminder(reminder)">{{reminder.title}}</app-reminder-item>

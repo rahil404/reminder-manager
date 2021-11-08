@@ -1,0 +1,14 @@
+<div 
+[ngClass]="{completed: reminder.completed}"
+class="reminder"
+(dblclick)="onToggle(reminder)"
+>
+  <h3>
+    {{ reminder.title }}
+    <fa-icon
+      (click)="onDelete(reminder)"
+      [icon]="faTrash"
+    ></fa-icon>
+  </h3>
+  <p>{{ reminder.day }}</p>
+</div>
