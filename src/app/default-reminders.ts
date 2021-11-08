@@ -24,5 +24,5 @@ export const REMINDERS: Reminder[] = [
     title: 'Doctors Appointment',
     day: 'June 8th at 3:30pm',
     completed: false,
-  },
+  }
 ];

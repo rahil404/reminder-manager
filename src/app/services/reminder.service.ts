@@ -26,4 +26,10 @@ export class ReminderService {
     this.reminders[foundIndex] = reminder;
     this.subject.next(this.reminders);
   }
+
+  deleteReminder(reminder: Reminder): void {
+    var foundIndex = this.reminders.findIndex(x => x.id == reminder.id);
+    this.reminders.splice(foundIndex, 1);
+    this.subject.next(this.reminders);
+  }
 }
