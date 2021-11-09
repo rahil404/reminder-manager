@@ -1,1 +1,23 @@
-<p>add-reminder works!</p>
+<form (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="title">Reminder</label>
+    <input
+      type="text"
+      name="title"
+      [(ngModel)]="title"
+      id="title"
+      placeholder="Add Reminder"
+    />
+  </div>
+  <div class="form-control">
+    <label for="day">Day & Time</label>
+    <input
+      type="text"
+      name="day"
+      [(ngModel)]="day"
+      id="day"
+      placeholder="Add Day & Time"
+    />
+  </div>
+  <input type="submit" value="Save Reminder" class="btn btn-block" />
+</form>

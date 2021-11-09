@@ -32,4 +32,9 @@ export class ReminderService {
     this.reminders.splice(foundIndex, 1);
     this.subject.next(this.reminders);
   }
+
+  addReminder(reminder: Reminder): void {
+    this.reminders.push(reminder);
+    this.subject.next(this.reminders);
+  }
 }
